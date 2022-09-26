@@ -173,6 +173,13 @@ while True:
                             print('You lost', '$' + str(bet), 'this round')
                             print('You have won', '$' + str(money - original), 'in total')
                             break
+                         if running_total == comp_cards:  # tie
+                            money = money
+                            print('You Tied')
+                            print('Computers Cards:', comp_cards, 'Your Cards:', running_total)
+                            print('you have $' + str(money))
+                            print('You lost', '$' + str(bet), 'this round')
+                            print('You have won', '$' + str(money - original), 'in total')
             elif play == 'no':
                 print('Whatever Then')
                 quit()
