@@ -1,6 +1,5 @@
 """
 a blackjack program
-
 started 1:50 9/22/2022
 done 3:04am 9/23/2022
 note1: 3:41am currently //BROKEN\\ 9/24/2022
@@ -12,7 +11,6 @@ note2: 11:47 pm currently //FIXED\\ 9/25/2022
     ace functionality
     a slightly better computer opponent
     a play and play again function
-
 """
 
 import random
@@ -173,7 +171,7 @@ while True:
                             print('You lost', '$' + str(bet), 'this round')
                             print('You have won', '$' + str(money - original), 'in total')
                             break
-                         if running_total == comp_cards:  # tie
+                        if running_total == comp_cards:  # tie
                             money = money
                             print('You Tied')
                             print('Computers Cards:', comp_cards, 'Your Cards:', running_total)
@@ -185,3 +183,4 @@ while True:
                 quit()
             else:
                 print('Try Again')
+                
