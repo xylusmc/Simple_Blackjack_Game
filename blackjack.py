@@ -60,7 +60,7 @@ while True:
                 card2 = random.choice(cards)  # gets random number from cards
 
                 while comp_cards < 12:  # makes computer hit if under 12 to make game slightly harder a little better
-                    comp_cards = comp_cards + random.choice(cards)  # comp_cards doesn't change form here on
+                    comp_cards = comp_cards + random.choice(cards)  # comp_cards doesn't change from here on
 
                 print('You are delt', card1, 'and', card2)
                 running_total = card1 + card2
